@@ -7,7 +7,8 @@ import yaml
 client = discord.Client()
 
 file = open("intake.yml")
-header = file["APP"]
+parsed_file = yaml.load(file, Loader=yaml.FullLoader)
+header = parsed_file["APP"]
 s = header["SECRET"]
 
 @client.event
