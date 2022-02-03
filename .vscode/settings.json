@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "C:\\Users\\Computer Admin\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}
