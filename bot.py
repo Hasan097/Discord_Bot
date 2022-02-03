@@ -2,8 +2,13 @@
 import os
 import discord
 import random
+import yaml
 
 client = discord.Client()
+
+file = open("intake.yml")
+header = file["APP"]
+s = header["SECRET"]
 
 @client.event
 async def on_ready():
@@ -36,4 +41,4 @@ async def on_message(message):
     if message.content == '!gek face reveal':
         await message.channel.send("https://tenor.com/view/punch-dwarf-gif-5261161")
 
-client.run("NzEzMjc5MjI3MTIxNjMxMjcz.XvwfGg.YkOSmLPYhVw5SA_rBcsHbtN3cR0")
+client.run(s)
