@@ -1,10 +1,13 @@
 # bot.py
 import os
 import discord
+from discord.ext import commands
 import random
 import yaml
 
 client = discord.Client()
+
+client = commands.Bot(command_prefix="!")
 
 file = open("intake.yml")
 parsed_file = yaml.load(file, Loader=yaml.FullLoader)
